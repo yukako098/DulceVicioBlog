@@ -1,0 +1,91 @@
+a {
+  text-decoration: none !important  ;
+
+  &:hover {
+    opacity: 0.8;
+    color: $maccha;
+  }
+}
+
+#main-page {
+  background-color: $lighterCream;
+}
+
+.post-image {
+  width: 100%;
+  height: 450px;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    opacity: 0.6;
+  }
+
+  h4 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $lighterCream;
+  }
+
+  p {
+    color: $lighterCream;
+  }
+}
+
+.post {
+  position: relative;
+}
+
+.post-container {
+  margin-top: 5%;
+  width: 50%;
+
+  h4 {
+    color: $vividOrange;
+  }
+
+  .card-body {
+    background-color: $lighterCream;
+  }
+
+  h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+  }
+
+  article {
+    margin-bottom: 5%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .suggestion {
+    margin-bottom: 5%;
+  }
+
+  .card {
+    background-color: $cream;
+    color: $deepGreen;
+  }
+
+  .post-card-body {
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 0.8rem;
+    color: $deepGreen;
+  }
+
+  h5 {
+    font-size: 1rem;
+    color: $deepGreen;
+    margin-bottom: 0;
+  }
+}

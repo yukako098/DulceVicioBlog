@@ -1,0 +1,97 @@
+body {
+  @include heightMax;
+}
+
+body {
+  font-family: $cormorant;
+  font-weight: lighter;
+  position: relative;
+}
+
+p {
+  margin: 0%;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.centralize {
+  @include centralize;
+}
+
+.reservation {
+  height: 100%;
+  background-color: $vividOrange;
+
+  h2 {
+    color: $lighterCream;
+    text-align: center;
+  }
+
+  form {
+    padding: 0.5rem;
+  }
+
+  .form-control {
+    margin-right: 0% !important;
+    width: 100%;
+  }
+
+  i {
+    color: $lighterCream;
+  }
+
+  .selection {
+    .p-2 {
+      border: 1px solid white;
+    }
+
+    .dropdown {
+      button {
+        background-color: $vividOrange;
+        border: none;
+
+        &:active {
+          border: none !important;
+        }
+      }
+    }
+    .dropdown-item {
+      z-index: 50;
+    }
+  }
+
+  .btn-secondary.focus,
+  .btn-secondary:focus {
+    box-shadow: none;
+  }
+  .btn-secondary:not(:disabled):not(.disabled).active:focus,
+  .btn-secondary:not(:disabled):not(.disabled):active:focus,
+  .show > .btn-secondary.dropdown-toggle:focus {
+    border: none;
+    box-shadow: none;
+    background-color: none;
+  }
+
+  .btn-secondary:not(:disabled):not(.disabled).active,
+  .btn-secondary:not(:disabled):not(.disabled):active,
+  .show > .btn-secondary.dropdown-toggle {
+    background-color: none;
+  }
+
+  .confirm_btn {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    border: none;
+    background-color: $maccha;
+    color: $lighterCream;
+
+    &:hover {
+      background-color: $deepGreen;
+      color: $cream;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+body {
+  font-family: $cormorant;
+  font-weight: lighter;
+  position: relative;
+}
+
+p {
+  margin: 0%;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.centralize {
+  @include centralize;
+}
+
+// FLOWER
+.left_top {
+  top: 0;
+  left: 0;
+  @include flowers;
+}
+
+.left_bottom {
+  bottom: 0%;
+  left: 0;
+  @include flowers;
+}
+
+.right_top {
+  top: 0;
+  right: 0;
+  @include flowers;
+}
+
+.right_bottom {
+  bottom: 0%;
+  right: 0;
+  @include flowers;
+}
+
+.images,
+.img {
+  @include widthMax;
+  @include heightMax;
+}
+
+// TOP PAGE
+.top {
+  color: $white;
+  background-color: $vividOrange;
+  position: relative;
+
+  .centralize {
+    text-align: center;
+  }
+
+  p,
+  h1 {
+    margin: 0%;
+    @include for-phone-only {
+      text-align: center;
+    }
+  }
+
+  p {
+    font-size: $fontSm;
+    letter-spacing: 0.8rem;
+  }
+
+  h1 {
+    font-size: $fontLg;
+  }
+}

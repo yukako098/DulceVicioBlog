@@ -1,0 +1,103 @@
+/* contact page */
+.contact_section,
+.contact_container,
+.open_time {
+  display: flex;
+}
+.contact_section {
+  background-color: $brown;
+  flex-wrap: wrap;
+}
+
+.contact_left {
+  width: 50%;
+  padding: 7%;
+  position: relative;
+
+  @include for-tablet-portrait-up {
+    flex-shrink: 1;
+    flex-grow: 10;
+    flex-basis: 450px;
+  }
+
+  @include for-phone-only {
+    width: 100%;
+  }
+
+  p,
+  h3 {
+    color: $cream;
+  }
+
+  h3 {
+    margin-top: 0px;
+    font-size: $fontMd;
+    margin-bottom: 10%;
+  }
+
+  .contact_container {
+    color: $cream;
+  }
+
+  ul {
+    margin: 0%;
+  }
+
+  li + li {
+    margin-top: 10%;
+  }
+
+  .contact_container_left {
+    margin-right: 10%;
+  }
+
+  .contact_container_right {
+    width: 100%;
+  }
+
+  .days {
+    margin-right: 12%;
+  }
+}
+
+.contact_right {
+  width: 50%;
+  position: relative;
+
+  @include for-phone-only {
+    display: none;
+  }
+
+  @include for-tablet-portrait-up {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+  }
+
+  .frame_parent {
+    width: 100%;
+    @include for-tablet-portrait-up {
+      padding-left: 10%;
+    }
+  }
+
+  .map {
+    box-shadow: -15px 15px $vividOrange;
+  }
+
+  iframe {
+    margin: 0%;
+
+    @include for-tablet-landscape-up {
+      border: 0;
+      width: 400px;
+      height: 350px;
+    }
+
+    @include for-tablet-portrait-up {
+      width: 400px;
+      height: 350px;
+      border: 0;
+    }
+  }
+}

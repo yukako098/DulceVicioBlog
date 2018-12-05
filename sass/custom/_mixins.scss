@@ -1,0 +1,93 @@
+@mixin widthMax {
+  width: 100%;
+}
+
+@mixin heightMax {
+  height: 100%;
+}
+
+@mixin centralize {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin titleFont($fontType) {
+  font-family: $fontType;
+  font-weight: bold;
+}
+
+@mixin flowers {
+  position: fixed;
+  width: 37%;
+  z-index: 50;
+
+  @include for-phone-only {
+    height: 45%;
+  }
+}
+
+@mixin parallax {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  height: 450px;
+  background-size: 100%;
+}
+
+@mixin menu_pic($top, $width, $height, $box-shadow) {
+  position: absolute;
+  top: $top;
+  width: $width;
+  height: $height;
+  box-shadow: $box-shadow;
+}
+
+// SEARCH PAGE
+@mixin formPosition {
+  position: absolute;
+  top: 30%;
+}
+
+// MAIN PAGE
+@mixin viewBtn {
+  font-size: $fontSm;
+  color: $lighterGray;
+}
+
+@mixin imgPosition {
+  width: 25%;
+  position: absolute;
+}
+
+// MEDIA QUERY
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) and (max-width: 899px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
